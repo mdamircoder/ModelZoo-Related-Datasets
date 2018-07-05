@@ -4,7 +4,7 @@
 
 EXAMPLE=/media/path/to/datasets/ # Location of cifar100_train_lmdb
 DATA=/media/path/to/datasets/ # Where to store the mean.binaryproto
-TOOLS=build/tools # Location of compute_image_mean in this folder
+TOOLS=build/tools # Location of compute_image_mean (Inside CAFFE_HOME)
 
 $TOOLS/compute_image_mean $EXAMPLE/cifar100_train_lmdb \
   $DATA/cifar100_mean.binaryproto
